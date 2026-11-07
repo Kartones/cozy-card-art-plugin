@@ -6,14 +6,13 @@ Tested with BepInEx version `5.4.23.6`.
 
 ## Install
 
-- With the game closed, then copy `CozyCartArt.dll` to `<game-folder>\BepInEx\plugins\`
+- Download the DLL from the [releases page of this repository](https://github.com/Kartones/cozy-card-art-plugin/releases/latest/).
+- With the game closed, then copy `CozyCartArt.dll` to `<game-folder>\BepInEx\plugins\`. 
 - Launch the game once: it creates `<game-folder>\BepInEx\config\CozyCartArt\` containing `front\`, `rear\` and `titles.txt`
 - Check `<game-folder>\BepInEx\LogOutput.log` for `Cozy Cart Art loaded` and `Applied N title override(s)`
 - Uninstall: delete `CozyCartArt.dll`
 
 ## Use
-
-Below, `<cfg>` is `<game-folder>\BepInEx\config\CozyCartArt`.
 
 - Replace art
   - Create a PNG, with the same name and resolution and path as the `templates` folders in this repository, but inside `<game-folder>\BepInEx\config\CozyCartArt\`. There are `files.txt` listing all valid file names and their resolutions
@@ -22,7 +21,7 @@ Below, `<cfg>` is `<game-folder>\BepInEx\config\CozyCartArt`.
   - Names are lowercase, region is `ntsc` or `pal`
   - Restart the game to see changes
 - Rename cartridges (game titles)
-  - Edit `<cfg>\titles.txt`, one line per game: `game001 = My Title`
+  - Edit `<game-folder>\BepInEx\config\CozyCartArt\titles.txt`, one line per game: `game001 = My Title`
   - Lines starting with `#` are comments; game ids are in `..\CozyCartAssets\game-titles.csv`
   - This only changes the menu text, not label art prints
   - Restart the game to see changes
@@ -37,6 +36,8 @@ game080 = Donkey Kong Country
 ```
 
 ![game 80 replaced screenshot](docs/sample-game-80-replacement.jpg)
+
+The replacement cover is AI-generated to quickly test that the plugin works, it contains mistakes.
 
 
 ## Limitations
