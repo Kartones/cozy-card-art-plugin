@@ -1,0 +1,7 @@
+galaxis16_ntsc.png 2048x2048
+galaxis16_pal.png 2048x2048
+gamefriend_ntsc.png 2048x2048
+gamefriend_pal.png 2048x2048
+silicon64_ntsc.png 2048x2048
+silicon64_pal.png 2048x2048
+super16_ntsc.png 2048x2048
